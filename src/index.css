@@ -1,0 +1,68 @@
+@import url("https://fonts.googleapis.com/css2?family=Gamja+Flower&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+h1 {
+  font-family: "Gamja Flower";
+  font-size: 4rem;
+}
+
+body {
+  color: white;
+  /* background-image: linear-gradient(
+    to top,
+    rgb(76, 25, 123),
+    rgb(173, 76, 247)
+  ); */
+  background: rgb(150, 74, 221);
+  scroll-behavior: smooth;
+}
+
+.slidecontainer {
+  width: 60%;
+}
+
+/* The slider itself */
+.slider {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 40%;
+  height: 25px;
+  background: #d3d3d3;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: 0.2s;
+  transition: opacity 0.2s;
+  border-radius: 0.25rem;
+}
+
+/* Mouse-over effects */
+.slider:hover {
+  opacity: 1; /* Fully shown on mouse-over */
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 35px;
+  height: 35px;
+  background: #3c0379;
+  cursor: pointer;
+  border-radius: 100px;
+}
+
+.slider::-moz-range-thumb {
+  width: 25px; /* Set a specific slider handle width */
+  height: 25px; /* Slider handle height */
+  background: #04aa6d; /* Green background */
+  cursor: pointer; /* Cursor on hover */
+}
