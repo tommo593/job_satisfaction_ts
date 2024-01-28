@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Gamja+Flower&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -18,17 +19,18 @@ h1 {
 
 body {
   color: white;
-  /* background-image: linear-gradient(
-    to top,
+  background-image: linear-gradient(
+    to bottom,
     rgb(76, 25, 123),
     rgb(173, 76, 247)
-  ); */
-  background: rgb(150, 74, 221);
+  );
+  /*background: rgb(150, 74, 221);*/
   scroll-behavior: smooth;
+  font-family: "Comfortaa";
 }
 
 .slidecontainer {
-  width: 60%;
+  width: 50%;
 }
 
 /* The slider itself */
