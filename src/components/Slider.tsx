@@ -1,16 +1,18 @@
 import React, { useState } from "react";
 
 type SliderProps = {
-  onSliderChange: (value: number) => void;
+  onSliderChange: (question: string, value: number) => void;
+  question: string;
 };
 
-const Slider: React.FC<SliderProps> = ({ onSliderChange }) => {
+const Slider: React.FC<SliderProps> = ({ onSliderChange, question }) => {
   const [value, setValue] = useState<number>(0);
 
   const handleSliderChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+    console.log("???");
     const newValue = parseInt(event.target.value, 10);
     setValue(newValue);
-    onSliderChange(newValue);
+    onSliderChange(question, newValue);
   };
 
   return (

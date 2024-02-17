@@ -8,11 +8,29 @@ import Results from "./components/Results";
 import SubmitBtn from "./components/SubmitBtn";
 
 const App: React.FC = () => {
-  const [totalScore, setTotalScore] = useState<number>(0);
+  const [questionAnswers, setQuestionAnswers] = useState<any>({
+    q1: 0,
+    q2: 0,
+    q3: 0,
+    q4: 0,
+    q5: 0,
+    q6: 0,
+  });
 
-  const handleSliderChange = (value: number) => {
-    setTotalScore(totalScore + value);
+  // Logic for slider score
+  const handleSliderChange = (question: string, value: number) => {
+    const newAnswers = {
+      ...questionAnswers,
+      [question]: value,
+    };
+    setQuestionAnswers(newAnswers);
   };
+
+  // Calculates total score
+  const totalScore = Object.values(questionAnswers).reduce(
+    (acc, curr) => acc + curr,
+    0
+  );
 
   const handleSubmit = () => {
     console.log("Total score:", totalScore);
@@ -31,27 +49,27 @@ const App: React.FC = () => {
           <p>
             How likely do you think you'll get promoted within the next 2 years?
           </p>
-          <Slider onSliderChange={handleSliderChange} />
+          <Slider question="q1" onSliderChange={handleSliderChange} />
         </div>
         <div className="py-8 shadow">
           <p>How much do you enjoy your current role?</p>
-          <Slider onSliderChange={handleSliderChange} />
+          <Slider question="q2" onSliderChange={handleSliderChange} />
         </div>
         <div className="py-8 shadow">
           <p>How satisfied are you with your current pay?</p>
-          <Slider onSliderChange={handleSliderChange} />
+          <Slider question="q3" onSliderChange={handleSliderChange} />
         </div>
         <div className="py-8 shadow">
           <p>How would you rate your development since starting with us?</p>
-          <Slider onSliderChange={handleSliderChange} />
+          <Slider question="q4" onSliderChange={handleSliderChange} />
         </div>
         <div className="py-8 shadow">
           <p>How satisfied are you with the level of support you receive?</p>
-          <Slider onSliderChange={handleSliderChange} />
+          <Slider question="q5" onSliderChange={handleSliderChange} />
         </div>
         <div className="py-8 shadow">
           <p>How satisfied are you with your contributions so far?</p>
-          <Slider onSliderChange={handleSliderChange} />
+          <Slider question="q6" onSliderChange={handleSliderChange} />
         </div>
       </div>
       <div className="py-8">
