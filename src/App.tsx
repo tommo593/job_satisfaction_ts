@@ -27,8 +27,8 @@ const App: React.FC = () => {
   };
 
   // Calculates total score
-  const totalScore = Object.values(questionAnswers).reduce(
-    (acc, curr) => acc + curr,
+  const totalScore: any = Object.values(questionAnswers).reduce(
+    (accumulator: any, currentVal: any) => accumulator + currentVal,
     0
   );
 
@@ -72,8 +72,8 @@ const App: React.FC = () => {
           <Slider question="q6" onSliderChange={handleSliderChange} />
         </div>
       </div>
-      <div className="py-8">
-        <p className="py-4">{totalScore}</p>
+      <div className="py-8 font-bold">
+        <h2 className="py-4 text-xl">Total Score: {totalScore}</h2>
         <SubmitBtn onClick={handleSubmit} />
       </div>
       <div className="py-8">
