@@ -36,6 +36,8 @@ const App: React.FC = () => {
     console.log("Total score:", totalScore);
   };
 
+  const [show, setShow] = useState(false);
+
   return (
     <>
       <div>
@@ -73,8 +75,15 @@ const App: React.FC = () => {
         </div>
       </div>
       <div className="py-8 font-bold">
-        <h2 className="py-4 text-xl">Total Score: {totalScore}</h2>
-        <SubmitBtn onClick={handleSubmit} />
+        <div>
+          <h2 className="py-4 text-xl">Total Score: {totalScore}</h2>
+        </div>
+        <SubmitBtn
+          type="submit"
+          title="Submit"
+          onClick={void handleSubmit}
+          handleClick={() => handleSubmit}
+        />
       </div>
       <div className="py-8">
         <Results />
