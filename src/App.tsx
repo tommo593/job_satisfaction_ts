@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-
 import "./App.css";
 import "./index.css";
 import Slider from "./components/Slider";
@@ -35,8 +34,6 @@ const App: React.FC = () => {
   const handleSubmit = () => {
     console.log("Total score:", totalScore);
   };
-
-  const [show, setShow] = useState(false);
 
   return (
     <>
@@ -81,8 +78,8 @@ const App: React.FC = () => {
         <SubmitBtn
           type="submit"
           title="Submit"
-          onClick={void handleSubmit}
-          handleClick={() => handleSubmit}
+          onClick={handleSubmit}
+          handleClick={handleSubmit} // Passing handleSubmit to handleClick prop
         />
       </div>
       <div className="py-8">
