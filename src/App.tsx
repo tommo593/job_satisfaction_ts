@@ -15,7 +15,7 @@ const App: React.FC = () => {
     q6: 0,
   });
 
-  const showResults = ([open, setOpen] = useState<boolean>(false));
+  const [open, setOpen] = useState<boolean>(false);
 
   // Logic for slider score
   const handleSliderChange = (question: string, value: number) => {
@@ -31,10 +31,6 @@ const App: React.FC = () => {
     (accumulator: any, currentVal: any) => accumulator + currentVal,
     0
   );
-
-  const handleSubmit = () => {
-    console.log("Total score:", totalScore);
-  };
 
   return (
     <>
@@ -72,15 +68,14 @@ const App: React.FC = () => {
           <Slider question="q6" onSliderChange={handleSliderChange} />
         </div>
       </div>
-      <div className="py-8 font-bold">
-        <div className="py-8">
-          <button onClick={() => setOpen(!open)}>Results</button>
-          {open && <p>{handleSubmit}</p>}
-        </div>
-        <div>
-          <h2 className="py-4 text-xl">Total Score: {totalScore}</h2>
-        </div>
-        <button></button>
+      <div className="py-8">
+        <button
+          onClick={() => setOpen(!open)}
+          className="font-bold transition-all hover:bg-purple-900 active:bg-purple-600 rounded p-2"
+        >
+          Results
+        </button>
+        {open && <p className="py-8">Total Score: {totalScore}</p>}
       </div>
     </>
   );

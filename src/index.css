@@ -19,11 +19,7 @@ h1 {
 
 body {
   color: white;
-  background-image: linear-gradient(
-    to bottom,
-    rgb(98, 12, 168),
-    rgb(161, 47, 213)
-  );
+  background: rgb(161, 47, 213);
   /*background: rgb(150, 74, 221);*/
   scroll-behavior: smooth;
   font-family: "Comfortaa";
