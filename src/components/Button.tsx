@@ -1,7 +1,4 @@
-import { MouseEventHandler } from "react";
-
 type ButtonProps = {
-  onClick: MouseEventHandler;
   title: string;
 };
 

@@ -3,8 +3,7 @@ import "./App.css";
 import "./index.css";
 import Slider from "./components/Slider";
 import Header from "./components/Header";
-import Results from "./components/Results";
-import SubmitBtn from "./components/SubmitBtn";
+import Navbar from "./components/Navbar";
 
 const App: React.FC = () => {
   const [questionAnswers, setQuestionAnswers] = useState<any>({
@@ -15,6 +14,8 @@ const App: React.FC = () => {
     q5: 0,
     q6: 0,
   });
+
+  const showResults = ([open, setOpen] = useState<boolean>(false));
 
   // Logic for slider score
   const handleSliderChange = (question: string, value: number) => {
@@ -39,7 +40,7 @@ const App: React.FC = () => {
     <>
       <div>
         <div>
-          <h1 className="py-8">Employee Satisfaction Survey</h1>
+          <Navbar />
         </div>
         <div className="py-8">
           <Header />
@@ -72,18 +73,14 @@ const App: React.FC = () => {
         </div>
       </div>
       <div className="py-8 font-bold">
+        <div className="py-8">
+          <button onClick={() => setOpen(!open)}>Results</button>
+          {open && <p>{handleSubmit}</p>}
+        </div>
         <div>
           <h2 className="py-4 text-xl">Total Score: {totalScore}</h2>
         </div>
-        <SubmitBtn
-          type="submit"
-          title="Submit"
-          onClick={handleSubmit}
-          handleClick={handleSubmit} // Passing handleSubmit to handleClick prop
-        />
-      </div>
-      <div className="py-8">
-        <Results />
+        <button></button>
       </div>
     </>
   );
