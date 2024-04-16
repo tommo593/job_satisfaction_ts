@@ -17,7 +17,7 @@ const Slider: React.FC<SliderProps> = ({ onSliderChange, question }) => {
 
   return (
     <div className="py-4">
-      <div className="flex justify-between px-60 py-4">
+      <div className="flex flex-row justify-center gap-8 py-4">
         <p>0 = least satisfied</p>
         <p>10 = most satisfied</p>
       </div>

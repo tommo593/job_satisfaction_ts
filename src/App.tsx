@@ -34,7 +34,7 @@ const App: React.FC = () => {
 
   return (
     <>
-      <div>
+      <div className="px-4">
         <div>
           <Navbar />
         </div>
