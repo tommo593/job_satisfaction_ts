@@ -5,7 +5,7 @@ type SubmitBtnProps = {
   title: string;
 };
 
-const SubmitBtn: React.FC<SubmitBtnProps> = (props: SubmitBtnProps) => {
+const SubmitBtn: React.FC<SubmitBtnProps> = () => {
   return (
     <div>
       <button
