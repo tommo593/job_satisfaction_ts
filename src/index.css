@@ -1,5 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Gamja+Flower&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -10,10 +9,10 @@
   padding: 0;
   box-sizing: border-box;
   text-align: center;
+  font-family: "Cormorant";
 }
 
 h1 {
-  font-family: "Gamja Flower";
   font-size: 4rem;
 }
 
@@ -22,7 +21,10 @@ body {
   background: rgb(161, 47, 213);
   /*background: rgb(150, 74, 221);*/
   scroll-behavior: smooth;
-  font-family: "Comfortaa";
+}
+
+p {
+  font-size: 1.25rem;
 }
 
 .slidecontainer {
