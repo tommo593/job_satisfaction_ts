@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { QUESTIONS } from "./constants/SliderQuestions";
 import "./App.css";
 import "./index.css";
 import Slider from "./components/Slider";
@@ -46,7 +45,7 @@ const App: React.FC = () => {
         </div>
         <div className="py-8 mb-4 rounded-lg bg-purple-400">
           <p>
-            How likely do you think you'll get promoted within the next 2 years?
+            How likely is it that you'll get promoted within the next 2 years?
           </p>
           <Slider question="q1" onSliderChange={handleSliderChange} />
         </div>
@@ -78,7 +77,7 @@ const App: React.FC = () => {
         >
           Results
         </button>
-        {open && <p className="py-8">Total Score: {totalScore}</p>}
+        {open && <p className="py-16">Total Score: {totalScore}</p>}
       </div>
     </>
   );
