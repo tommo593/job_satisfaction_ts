@@ -4,6 +4,7 @@ export default {
   theme: {
     colors: {
       slider_bg: "#a3a398",
+      button_bg: "#b5b5a9",
     },
     extend: {},
   },
