@@ -8,10 +8,10 @@ const Navbar = () => {
           src="fulfilld_logo.jpg"
           alt="Fulfilld"
           title="Fulfilld"
-          className="max-w-60 p-8"
+          className="max-w-full max-h-20 m-8 object-scale-down"
         />
       </div>
-      <h1 className="text-center m-auto pr-8">Employee Satisfaction Survey</h1>
+      <h1 className="text-center m-auto">Employee Satisfaction Survey</h1>
       <div className="p-8">
         <LoginButton />
       </div>

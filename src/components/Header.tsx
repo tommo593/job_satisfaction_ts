@@ -1,6 +1,6 @@
 const Header = () => {
   return (
-    <div className="py-8 text-center">
+    <div className="py-8 text-center header-text">
       <p>
         We are going to ask you a series of questions in which you can answer
         using the sliding scale. At the end of the questionnaire, please press

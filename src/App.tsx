@@ -72,7 +72,7 @@ const App: React.FC = () => {
       <div className="py-8">
         <button
           onClick={() => setOpen(!open)}
-          className="bg-button_bg hover:bg-slider_bg transition duration-300 px-8 py-4 rounded text-lg"
+          className="bg-button_bg hover:bg-slider_bg transition duration-300 px-8 py-4 rounded text-xl"
         >
           Results
         </button>

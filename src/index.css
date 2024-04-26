@@ -13,7 +13,7 @@
 }
 
 h1 {
-  font-size: 4rem;
+  font-size: 3rem;
 }
 
 body {
@@ -25,6 +25,10 @@ body {
 
 p {
   font-size: 1.25rem;
+}
+
+.header-text {
+  color: #60605a;
 }
 
 .slidecontainer {
