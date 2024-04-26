@@ -72,7 +72,7 @@ const App: React.FC = () => {
       <div className="py-8">
         <button
           onClick={() => setOpen(!open)}
-          className="font-bold transition-all hover:bg-purple-900 active:bg-purple-600 duration-300 rounded p-2"
+          className="font-bold transition-all hover:bg-purple-900 active:bg-purple-600 rounded p-2"
         >
           Results
         </button>
