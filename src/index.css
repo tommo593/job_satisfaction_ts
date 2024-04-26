@@ -17,8 +17,8 @@ h1 {
 }
 
 body {
-  color: white;
-  background: rgb(161, 47, 213);
+  color: #fffff7;
+  background: #b5b5a9;
   /*background: rgb(150, 74, 221);*/
   scroll-behavior: smooth;
 }
@@ -37,7 +37,7 @@ p {
   appearance: none;
   width: 40%;
   height: 25px;
-  background: #d3d3d3;
+  background: #fbfbeb;
   outline: none;
   opacity: 0.7;
   -webkit-transition: 0.2s;
@@ -55,7 +55,7 @@ p {
   appearance: none;
   width: 35px;
   height: 35px;
-  background: #3c0379;
+  background: #60605a;
   cursor: pointer;
   border-radius: 100px;
 }
