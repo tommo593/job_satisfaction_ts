@@ -1,9 +1,12 @@
-import React from "react";
+import Navbar from "../src/components/Navbar";
 
 const infoForm = () => {
   return (
     <div>
-      <form action="">
+      <div>
+        <Navbar />
+      </div>
+      <form action="" className="flex flex-col">
         <label htmlFor="">
           Gender:
           <input type="radio" value="Male" />

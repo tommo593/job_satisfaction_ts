@@ -1,4 +1,4 @@
-import LoginButton from "../auth/Login";
+//import LoginButton from "../auth/Login";
 
 const Navbar = () => {
   return (
@@ -12,9 +12,10 @@ const Navbar = () => {
         />
       </div>
       <h1 className="text-center m-auto">Employee Satisfaction Survey</h1>
+      {/*
       <div className="p-8">
         <LoginButton />
-      </div>
+  </div> */}
     </div>
   );
 };

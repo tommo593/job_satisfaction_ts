@@ -1,3 +1,18 @@
+export const ROUTER_LINKS = [
+  {
+    id: 1,
+    url: "/",
+  },
+  {
+    id: 2,
+    url: "/info",
+  },
+  {
+    id: 3,
+    url: "/questions",
+  },
+];
+
 export const QUESTIONS = [
   {
     id: 1,
