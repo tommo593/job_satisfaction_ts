@@ -27,6 +27,7 @@ const infoForm = () => {
             <option value="">£80,000+</option>
           </select>
         </label>
+        <button type="submit">Submit</button>
       </form>
     </div>
   );
