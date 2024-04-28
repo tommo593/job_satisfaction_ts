@@ -30,7 +30,7 @@ const Slider: React.FC<SliderProps> = ({ onSliderChange, question }) => {
         id="myRange"
         onChange={handleSliderChange}
       />
-      <p>Score: {value}</p>
+      <p className="py-8">Score: {value}</p>
     </div>
   );
 };
