@@ -1,6 +1,5 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import Slider from "../src/components/Slider";
-import Header from "../src/components/Header";
 import Navbar from "../src/components/Navbar";
 
 const QuestionsPage = () => {

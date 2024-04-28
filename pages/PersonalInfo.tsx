@@ -12,10 +12,14 @@ const infoForm = () => {
           to you.
         </p>
       </div>
-      <div className="info-form m-auto items-center flex flex-col justify-center w-40">
+      <div className="m-auto items-center flex flex-col justify-center w-40">
         <form action="#">
           <div>
-            <input type="text" placeholder="Type your age here" />
+            <input
+              type="text"
+              placeholder="Type your age here"
+              className="info-form"
+            />
             <div>
               <select name="Gender" id="salary">
                 <option value="">Gender</option>
@@ -26,9 +30,14 @@ const infoForm = () => {
               </select>
             </div>
           </div>
-          <input type="text" placeholder="Type your job title here" />
+          <input
+            type="text"
+            placeholder="Type your job title here"
+            className="info-form"
+          />
           <div>
             <select name="Salary" id="salary">
+              <option value="">Salary</option>
               <option value="">£20,000 - £30,000</option>
               <option value="">£30,001 - £45,000</option>
               <option value="">£45,001 - £60,000</option>
