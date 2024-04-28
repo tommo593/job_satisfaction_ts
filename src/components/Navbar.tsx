@@ -2,16 +2,16 @@
 
 const Navbar = () => {
   return (
-    <div className="flex flex-row">
+    <div className="nav flex flex-row items-center justify-between gap-4 px-4 m-8">
       <div>
         <img
           src="fulfilld_logo.jpg"
           alt="Fulfilld"
           title="Fulfilld"
-          className="max-w-full max-h-20 m-8 object-scale-down"
+          className="max-h-20 m-8 object-scale-down"
         />
       </div>
-      <h1 className="text-center m-auto">Employee Satisfaction Survey</h1>
+      <h1>Employee Satisfaction Survey</h1>
       {/*
       <div className="p-8">
         <LoginButton />
