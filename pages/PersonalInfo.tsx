@@ -6,7 +6,7 @@ const infoForm = () => {
       <div>
         <Navbar />
       </div>
-      <div className="m-4">
+      <div className="">
         <p className="header-text p-8">
           Please fill in the the form below and apply the options most relevant
           to you.
