@@ -1,6 +1,8 @@
 import Navbar from "../src/components/Navbar";
+import { useFormStatus } from "react-dom";
 
 const infoForm = () => {
+  const { pending } = useFormStatus();
   return (
     <div>
       <div>
@@ -13,13 +15,26 @@ const infoForm = () => {
         </p>
       </div>
       <div className="m-auto items-center flex flex-col justify-center w-40">
-        <form action="#">
+        <form action="">
           <div>
-            <input
-              type="text"
-              placeholder="Type your age here"
-              className="info-form"
-            />
+            <div>
+              <select name="Gender" id="salary">
+                <option value="">Select your age</option>
+                <option value="">18 -25</option>
+                <option value="">25 - 35</option>
+                <option value="">35 - 45 </option>
+                <option value="">45+</option>
+              </select>
+            </div>
+            <div>
+              <select name="Gender" id="salary">
+                <option value="">How long have you been at the company?</option>
+                <option value="">- 1 year</option>
+                <option value="">1-2 years</option>
+                <option value="">2 - 5 years</option>
+                <option value="">5 + years</option>
+              </select>
+            </div>
             <div>
               <select name="Gender" id="salary">
                 <option value="">Gender</option>
@@ -50,9 +65,10 @@ const infoForm = () => {
       <a href="/questions">
         <button
           type="submit"
+          disabled={pending}
           className="bg-button_bg hover:bg-slider_bg transition duration-300 px-8 py-2 rounded text-lg mt-8"
         >
-          Submit
+          {pending ? "Submitting..." : "Submit"}
         </button>
       </a>
     </div>
