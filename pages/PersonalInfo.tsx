@@ -1,7 +1,7 @@
 import Navbar from "../src/components/Navbar";
 import { useFormStatus } from "react-dom";
 
-const infoForm = () => {
+const InfoForm = () => {
   const { pending } = useFormStatus();
   return (
     <div>
@@ -18,21 +18,13 @@ const infoForm = () => {
         <form action="">
           <div>
             <div>
-              <select name="Gender" id="salary">
+              <select name="Age" id="salary">
                 <option value="">Select your age</option>
                 <option value="">18 -25</option>
                 <option value="">25 - 35</option>
                 <option value="">35 - 45 </option>
                 <option value="">45+</option>
-              </select>
-            </div>
-            <div>
-              <select name="Gender" id="salary">
-                <option value="">How long have you been at the company?</option>
-                <option value="">- 1 year</option>
-                <option value="">1-2 years</option>
-                <option value="">2 - 5 years</option>
-                <option value="">5 + years</option>
+                <option value="">Prefer not to say</option>
               </select>
             </div>
             <div>
@@ -44,12 +36,34 @@ const infoForm = () => {
                 <option value="">Prefer not to say</option>
               </select>
             </div>
+            <div>
+              <select name="Tenure" id="salary">
+                <option value="">How long have you been at the company?</option>
+                <option value="">&lt; 1 year</option>
+                <option value="">1-2 years</option>
+                <option value="">2 - 5 years</option>
+                <option value="">5 + years</option>
+                <option value="">Prefer not to say</option>
+              </select>
+            </div>
           </div>
+          {/*}
           <input
             type="text"
             placeholder="Type your job title here"
             className="info-form"
-          />
+  />*/}{" "}
+          <div>
+            <select name="Salary" id="salary">
+              <option value="">Department</option>
+              <option value="">HR</option>
+              <option value="">R&D</option>
+              <option value="">Sales & Marketing</option>
+              <option value="">IT & Web</option>
+              <option value="">Operations</option>
+              <option value="">Prefer not to say</option>
+            </select>
+          </div>
           <div>
             <select name="Salary" id="salary">
               <option value="">Salary</option>
@@ -58,6 +72,7 @@ const infoForm = () => {
               <option value="">£45,001 - £60,000</option>
               <option value="">£60,001 - £80,000</option>
               <option value="">£80,000+</option>
+              <option value="">Prefer not to say</option>
             </select>
           </div>
         </form>
@@ -75,4 +90,4 @@ const infoForm = () => {
   );
 };
 
-export default infoForm;
+export default InfoForm;
