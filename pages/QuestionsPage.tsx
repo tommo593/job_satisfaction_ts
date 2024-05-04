@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Slider from "../src/components/Slider";
 import Navbar from "../src/components/Navbar";
+import Footer from "../src/components/Footer";
 
 const QuestionsPage = () => {
   const [questionAnswers, setQuestionAnswers] = useState<any>({
@@ -65,16 +66,19 @@ const QuestionsPage = () => {
         </div>
       </div>
       <div>
-        <button
-          onClick={() => setOpen(!open)}
-          className="bg-button_bg hover:bg-slider_bg transition duration-300 px-8 py-4 rounded text-xl"
-        >
-          Results
-        </button>
-        {open && (
-          <p className="py-8 text-xl font-bold">Total Score: {totalScore}</p>
-        )}
+        <a href="/results">
+          <button
+            onClick={() => setOpen(!open)}
+            className="bg-button_bg hover:bg-slider_bg transition duration-300 px-8 py-4 rounded text-xl"
+          >
+            Results
+          </button>
+          {open && (
+            <p className="py-8 text-xl font-bold">Total Score: {totalScore}</p>
+          )}
+        </a>
       </div>
+      <Footer />
     </>
   );
 };

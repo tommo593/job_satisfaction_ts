@@ -1,3 +1,4 @@
+import Footer from "../src/components/Footer";
 import Navbar from "../src/components/Navbar";
 import { useFormStatus } from "react-dom";
 
@@ -86,6 +87,7 @@ const InfoForm = () => {
           {pending ? "Submitting..." : "Submit"}
         </button>
       </a>
+      <Footer />
     </div>
   );
 };

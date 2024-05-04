@@ -3,6 +3,7 @@ import "./index.css";
 import Navbar from "./components/Navbar";
 import Header from "./components/Header";
 import { FaArrowRightLong } from "react-icons/fa6";
+import Footer from "./components/Footer";
 
 const App: React.FC = () => {
   return (
@@ -21,6 +22,7 @@ const App: React.FC = () => {
           </button>
         </a>
       </div>
+      <Footer />
     </>
   );
 };
