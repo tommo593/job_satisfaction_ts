@@ -66,17 +66,15 @@ const QuestionsPage = () => {
         </div>
       </div>
       <div>
-        <a href="/results">
-          <button
-            onClick={() => setOpen(!open)}
-            className="bg-button_bg hover:bg-slider_bg transition duration-300 px-8 py-4 rounded text-xl"
-          >
-            Results
-          </button>
-          {open && (
-            <p className="py-8 text-xl font-bold">Total Score: {totalScore}</p>
-          )}
-        </a>
+        <button
+          onClick={() => setOpen(!open)}
+          className="bg-button_bg hover:bg-slider_bg transition duration-300 px-8 py-4 rounded text-xl"
+        >
+          Results
+        </button>
+        {open && (
+          <p className="py-8 text-xl font-bold">Total Score: {totalScore}</p>
+        )}
       </div>
       <Footer />
     </>

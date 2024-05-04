@@ -15,6 +15,7 @@ const ResultsPage: React.FC<Props> = ({ totalScore }) => {
     } else {
       return <p>You earned a high score</p>;
     }
+    console.log({ scoreResults });
   };
 
   return (
